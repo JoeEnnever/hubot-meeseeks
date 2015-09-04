@@ -26,7 +26,7 @@ module.exports = (robot) ->
     robot
       .http(webhook_url)
       .header('Content-Type', 'application/json')
-      .post(slack_notification) (err, slack_res, body) ->
+      .post(JSON.stringify(slack_notification)) (err, slack_res, body) ->
         console.log(err)
         console.log(body)
         res.send 'OK'
