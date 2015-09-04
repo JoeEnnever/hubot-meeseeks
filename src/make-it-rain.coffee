@@ -24,6 +24,7 @@ module.exports = (robot) ->
       'icon_emoji': ':heavy_dollar_sign:'
     webhook_url = process.env.HUBOT_SLACK_WEBHOOK_URL
     robot.http(webhook_url).post(slack_notification) (err, res, body) ->
-      console.log(res)
-    res.send 'OK'
+      console.log(err)
+      console.log(body)
+      res.send 'OK'
 
