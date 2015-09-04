@@ -1,0 +1,25 @@
+{
+  "name": "hubot-make-it-rain",
+  "description": "Make it rain",
+  "version": "1.0.0",
+  "author": "Joe Ennever <joe.ennever@gmail.com>",
+  "repository": "https://github.com/JoeEnnever/hubot-make-it-rain",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  }
+}
