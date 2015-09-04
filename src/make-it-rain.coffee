@@ -7,7 +7,7 @@
 # Configuration:
 #   HUBOT_SLACK_WEBHOOK_URL
 #
-images = require './data/images.json'
+images = require './data/gifs.json'
 
 module.exports = (robot) ->
   robot.router.post '/hubot/stripe', (req, res) ->
