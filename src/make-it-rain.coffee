@@ -12,7 +12,10 @@ images = require './data/gifs.json'
 module.exports = (robot) ->
   robot.router.post '/hubot/stripe', (req, res) ->
     body = if req.body.payload? then JSON.parse req.body.payload else req.body
-    return unless body.type == 'charge.succeeded'
+    unless body.type == 'charge.succeeded'
+      res.send 'OK'
+      return
+
     gif = images[Math.floor(Math.random() * images.length)]
     amount = "$#{body.data.object.amount / 100}"
     slack_notification =
@@ -22,4 +25,5 @@ module.exports = (robot) ->
     webhook_url = process.env.HUBOT_SLACK_WEBHOOK_URL
     robot.http(webhook_url).post(slack_notification) (err, res, body) ->
       console.log(res)
+    res.send 'OK'
 
