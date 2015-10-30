@@ -7,4 +7,4 @@
 
 module.exports = (robot) ->
   robot.hear /^mr(\.)? meeseeks/i, (msg) ->
-    msg.respond ':meeseeks: CAAAAAAAAAN DOOOOOOO!'
+    msg.reply ':meeseeks: CAAAAAAAAAN DOOOOOOO!'
