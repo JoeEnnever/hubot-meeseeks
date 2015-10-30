@@ -1,1 +1,1 @@
-# hubot-make-it-rain
+# hubot-meeseeks

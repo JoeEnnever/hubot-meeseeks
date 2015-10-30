@@ -1,9 +1,9 @@
 {
-  "name": "hubot-make-it-rain",
-  "description": "Make it rain",
+  "name": "hubot-meeseeks",
+  "description": "I'm Mr. Meeseeks!",
   "version": "1.0.0",
   "author": "Joe Ennever <joe.ennever@gmail.com>",
-  "repository": "https://github.com/JoeEnnever/hubot-make-it-rain",
+  "repository": "https://github.com/JoeEnnever/hubot-meeseeks",
   "license": "MIT",
   "keywords": [
     "hubot",
